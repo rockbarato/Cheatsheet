@@ -23,7 +23,7 @@ Timing is on.
 ### Restore Database from file
 Restoring is pretty easy:
 
-```bash
+```postgres
 # psql -U <username> -d <dbname> -1 -f <filename>.sql
 ```
 
