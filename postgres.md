@@ -19,6 +19,26 @@ By default the timing of query results will not be available, but we can turn it
 # \timing
 Timing is on.
 ```
+
+### Restore Database from file
+Restoring is pretty easy:
+
+```bash
+# psql -U <username> -d <dbname> -1 -f <filename>.sql
+```
+
+or
+
+```bash
+# pg_restore -U <username> -d <dbname> -1 <filename>.sql
+```
+
+or 
+
+```bash
+# psql -U <username> <dbname> < <filename>.sql
+```
+
 Most `\d` commands support additional param of `__schema__.name__` and accept wildcards like `*.*`
 
 - `\q`: Quit/Exit
