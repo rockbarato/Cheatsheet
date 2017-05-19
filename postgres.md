@@ -1,4 +1,3 @@
-
 ## PostgreSQL
 
 Magic words:
@@ -135,3 +134,7 @@ Casting:
 $ echo "bind "^R" em-inc-search-prev" > $HOME/.editrc
 $ source $HOME/.editrc
 ``` 
+
+## Source
+* [Original Cheatsheet](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546) by @Kartones
+* [http://postgresguide.com/utilities/psql.html](http://postgresguide.com/utilities/psql.html)
