@@ -12,12 +12,23 @@ Another flags:
 * `-U` the user to connect with
 * `-p` the port to connect to (default is 5432)
 
+## Commonly used commands
+### Turn query timing on
+
+By default the timing of query results will not be available, but we can turn it on by using the following command:
+```bash
+# \timing
+Timing is on.
+```
 Most `\d` commands support additional param of `__schema__.name__` and accept wildcards like `*.*`
 
 - `\q`: Quit/Exit
 - `\c __database__`: Connect to a database
+- `\d`: List all tables in database
+- `\d+` List all tables in database along with some additional information
 - `\d __table__`: Show table definition including triggers
-- `\dt *.*`: List tables from all schemas (if `*.*` is omitted will only show SEARCH_PATH ones)
+- `\d+ __table__`: Describe a table with additional information
+- `\dt *.*`: List tables from all schemas (if `*.*` is omitted will only show `SEARCH_PATH` ones)
 - `\l`: List databases
 - `\dn`: List schemas
 - `\df`: List functions
