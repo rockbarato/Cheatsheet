@@ -24,19 +24,19 @@ Timing is on.
 Restoring is pretty easy:
 
 ```postgres
-# psql -U <username> -d <dbname> -1 -f <filename>.sql
+$ psql -U <username> -d <dbname> -1 -f <filename>.sql
 ```
 
 or
 
 ```bash
-# pg_restore -U <username> -d <dbname> -1 <filename>.sql
+$ pg_restore -U <username> -d <dbname> -1 <filename>.sql
 ```
 
 or 
 
 ```bash
-# psql -U <username> <dbname> < <filename>.sql
+$ psql -U <username> <dbname> < <filename>.sql
 ```
 
 Most `\d` commands support additional param of `__schema__.name__` and accept wildcards like `*.*`
